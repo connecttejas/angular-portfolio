@@ -1,27 +1,25 @@
-<section class="hero-container">
-  <div class="hero-profile">
-    <img class="hero-img" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Tejas Deshmukh" />
-    <span class="hero-name">Tejas Deshmukh</span>
-  </div>
-  <div class="hero-content">
-    <h1>
-      Building <span class="highlight">modern web applications</span><br />
-      with a focus on aesthetics, functionality<br />
-      and accessibility.
-    </h1>
-    <div class="hero-actions">
-      <button mat-stroked-button color="primary" class="contact-btn">
-        <mat-icon style="color: #fff;">mail</mat-icon> Contact me
-      </button>
-      <a mat-icon-button href="https://github.com/connecttejas" target="_blank" aria-label="GitHub">
-        <mat-icon style="color: #fff;">public</mat-icon>
+<section class="hero-container" @staggerFadeInUp>
+  <div class="hero-left">
+    <div class="hero-greeting hero-animate">Hi, my name is</div>
+    <div class="hero-name hero-animate">Tejas.</div>
+    <div class="hero-title hero-animate">I build things for web</div>
+    <div class="hero-desc hero-animate">
+      <span class="highlight">Angular Developer</span>  passionate about crafting clean, user-friendly web applications.
+      I love turning ideas into interactive experiences using Angular, JavaScript, and modern web technologies.
+    </div>
+    <div class="hero-actions hero-animate">
+      <a class="contact-btn" href="assets/Tejas_Deshmukh_Angular_Developer_Resume.pdf" target="_blank" rel="noopener noreferrer">
+        Resume
       </a>
-      <a mat-icon-button href="https://www.linkedin.com/in/tejas-deshmukh97/" target="_blank" aria-label="LinkedIn">
-        <mat-icon style="color: #fff;">person</mat-icon>
+      <a href="https://github.com/connecttejas/angular-portfolio" target="_blank" aria-label="GitHub">
+        <img src="assets/icons/github.svg" alt="GitHub" style="width: 32px; height: 32px;" />
       </a>
-      <a mat-icon-button href="#" target="_blank" aria-label="Instagram">
-        <mat-icon style="color: #fff;">photo_camera</mat-icon>
+      <a href="https://www.linkedin.com/in/tejas-deshmukh97/" target="_blank" aria-label="LinkedIn">
+        <img src="assets/icons/linkedin.svg" alt="LinkedIn" style="width: 32px; height: 32px;" />
       </a>
     </div>
+  </div>
+  <div class="hero-right hero-animate">
+    <img class="hero-photo" src="assets/tejas-photo.jpeg" alt="Tejas Deshmukh" />
   </div>
 </section>

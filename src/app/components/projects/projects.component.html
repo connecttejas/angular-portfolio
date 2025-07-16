@@ -4,42 +4,46 @@
     <span>Projects</span>
   </div>
   <div class="projects-list">
-    <mat-card class="project-card">
-      <img mat-card-image src="https://placehold.co/300x180/222/fff?text=Project+1" alt="ZenSerenity Spa" />
+    <mat-card class="project-card" (click)="scrollToTop()">
+      <img mat-card-image src="https://placehold.co/300x180/222/fff?text=Portfolio+Website" alt="Personal Portfolio" />
       <mat-card-content>
-        <div class="project-title">ZenSerenity Spa</div>
+        <div class="project-title">Personal Portfolio</div>
         <div class="project-tags">
-          <span class="tag">Tailwind CSS</span>
-          <span class="tag">React</span>
+          <span class="tag">Angular</span>
+          <span class="tag">Responsive Design</span>
         </div>
         <div class="project-desc">
-          ZenSerenity Spa is your digital sanctuary for relaxation and wellness. Our website offers a seamless and soothing experience where you can explore our spa services, book...
+          A modern, responsive portfolio website built with Angular showcasing my skills and projects. Features smooth animations, dark theme, mobile-first design, and optimized performance. Demonstrates proficiency in component architecture, routing, and modern CSS techniques.
         </div>
       </mat-card-content>
     </mat-card>
-    <mat-card class="project-card">
-      <img mat-card-image src="https://placehold.co/300x180/222/fff?text=Project+2" alt="SoleElegance Shoes" />
+    <mat-card class="project-card disabled-card">
+      <img mat-card-image src="https://placehold.co/300x180/222/fff?text=ShopEase" alt="ShopEase - E-commerce Platform" />
       <mat-card-content>
-        <div class="project-title">SoleElegance Shoes</div>
+        <div class="dev-badge">Under Development</div>
+        <div class="project-title">ShopEase - E-commerce Platform</div>
         <div class="project-tags">
-          <span class="tag">Tailwind CSS</span>
-          <span class="tag">React</span>
+          <span class="tag">Angular</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">NgRx</span>
+          <span class="tag">Stripe</span>
         </div>
         <div class="project-desc">
-          SoleElegance Shoes is your one-stop destination for the latest trends in footwear. Our website offers an elegant and user-friendly interface where you can explore our extensive collection...
+          A complete e-commerce solution with product catalog, shopping cart, user authentication, and payment integration. Features include product filtering, wishlist functionality, order management, and admin dashboard. Built with NgRx for state management and Stripe for secure payments.
         </div>
       </mat-card-content>
     </mat-card>
-    <mat-card class="project-card">
-      <img mat-card-image src="https://placehold.co/300x180/222/fff?text=Project+3" alt="HarmonyBeat" />
+    <mat-card class="project-card disabled-card">
+      <img mat-card-image src="https://placehold.co/300x180/222/fff?text=StreamFlix" alt="StreamFlix - Netflix Clone" />
       <mat-card-content>
-        <div class="project-title">HarmonyBeat</div>
+        <div class="dev-badge">Under Development</div>
+        <div class="project-title">StreamFlix - Netflix Clone</div>
         <div class="project-tags">
-          <span class="tag">Tailwind CSS</span>
-          <span class="tag">React</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">TMDB API</span>
         </div>
         <div class="project-desc">
-          HarmonyBeat is your ultimate music companion, designed to elevate your auditory experience. With a sleek and intuitive interface, our app allows you to explore a vast library of songs...
+          A fully functional Netflix clone featuring user authentication, movie browsing, search functionality, and responsive design. Integrates with TMDB API for real-time movie data, implements Firebase for user management, and includes features like watchlists and video trailers.
         </div>
       </mat-card-content>
     </mat-card>
