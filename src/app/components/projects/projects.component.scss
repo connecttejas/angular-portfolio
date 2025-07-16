@@ -112,6 +112,12 @@
   margin-bottom: 0;
 }
 
+img[mat-card-image] {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
 @media (max-width: 900px) {
   .projects-list {
     flex-direction: column;
