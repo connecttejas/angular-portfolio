@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
@@ -28,5 +28,18 @@ export class HeaderComponent implements AfterViewInit {
       }
     };
     type();
+  }
+
+  @HostListener('click', ['$event'])
+  onNavClick(event: Event) {
+    const target = event.target as HTMLElement;
+    if (target.classList.contains('nav-link') && target.getAttribute('href')?.startsWith('#')) {
+      event.preventDefault();
+      const sectionId = target.getAttribute('href')!.substring(1);
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 }

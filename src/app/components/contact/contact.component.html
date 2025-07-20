@@ -1,17 +1,30 @@
-<section class="contact-section">
+<section class="contact-section" id="contact">
   <div class="contact-title">Get In Touch</div>
   <div class="contact-subtitle">
     Focused On <span class="highlight">Front-End Development</span>.<br />
     Let’s Connect And Bring Your Project To Life!
   </div>
+  <div class="contact-info">
+    <div>
+      <mat-icon>mail</mat-icon>
+      <span>{{ email }}</span>
+      <button mat-icon-button color="primary" class="copy-btn" (click)="copyToClipboard(email, 'email')" aria-label="Copy email">
+        <mat-icon>content_copy</mat-icon>
+      </button>
+    </div>
+    <div>
+      <mat-icon>call</mat-icon>
+      <span>{{ phone }}</span>
+      <button mat-icon-button color="primary" class="copy-btn" (click)="copyToClipboard(phone, 'phone')" aria-label="Copy phone number">
+        <mat-icon>content_copy</mat-icon>
+      </button>
+    </div>
+  </div>
   <div class="contact-actions">
-    <a mat-stroked-button color="primary" href="mailto:tvd999@yahoo.in" class="contact-btn">
-      <mat-icon>mail</mat-icon> Email
-    </a>
     <a mat-stroked-button color="primary" href="https://www.linkedin.com/in/tejas-deshmukh97/" target="_blank" class="contact-btn">
       <mat-icon>person</mat-icon> LinkedIn
     </a>
-    <a mat-stroked-button color="primary" href="#" class="contact-btn">
+    <a mat-stroked-button color="primary" href="assets/Tejas_Deshmukh_Angular_Developer_Resume.pdf" download class="contact-btn">
       <mat-icon>description</mat-icon> Resume
     </a>
   </div>
